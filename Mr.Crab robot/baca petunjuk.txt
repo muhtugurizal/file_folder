@@ -1,0 +1,4 @@
+1. Sebelum buka koding ANROID_SENSOR pastikan sudan menambahkan Library newPing-master dengan cara
+2. Copy dan paste folder newPing-master pada  C:\Users\yourPC\Documents\Arduino\libraries
+3. Buka koding ANROID_SENSOR dan uploading..
+4. Selesai

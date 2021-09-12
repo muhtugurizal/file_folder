@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jam analog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="jamanalog">
+  	<div class="Jam">
+  		<div class="jm" id="jm"></div>
+    </div>
+    <div class="menit">
+    	<div class="mn" id="mn"></div>
+    </div>
+    <div class="detik">
+    	<div class="dt" id="dt"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  	const deg = 6;
+  	const jm = document.querySelector("#jm")
+  	const mn = document.querySelector("#mn")
+  	const dt = document.querySelector("#dt")
+  	setInterval(()=>{
+  		let day = new Date();
+  		let hh = day.getHours()* 30;
+  		let mm = day.getMinutes()*deg;
+  		let ss = day.getSeconds()*deg;
+  		jm.style.transform= `rotateZ(${hh+(mm/12)}deg)`;
+  		mn.style.transform= `rotateZ(${mm}deg)`;
+  		dt.style.transform= `rotateZ(${ss}deg)`;
+  	})
+  </script>
+</body>
+</html>
